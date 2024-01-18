@@ -19,6 +19,6 @@ def get_postres_conn_str():
     p_pass_encoded = urllib.parse.quote(p_pass)
 
     host_2 = f"user={p_user} password={p_pass_encoded} dbname={p_db} host={p_host} port={p_port}"
-    
+    print(f"el host es {host_2}")
     return host_2
 print(get_postres_conn_str())
